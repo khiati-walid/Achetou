@@ -1,4 +1,4 @@
-
+/************************for incrementing the number pf products in a the basket*********************************/
 var counter=0;
 function count()
 {
