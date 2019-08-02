@@ -21,3 +21,23 @@
 #img-upload{
     width: 100%;
 }
+
+
+/******************************************************************************************/
+/*
+ * for trade sell option
+ */
+.details{
+  display: none;
+}
+#Trade, #Sell { display: none;}
+
+#customRadio1:checked ~ #Trade {display: block;} 
+#customRadio1:checked+label:before, #customRadio2:checked+label:before{
+background:#1D2951;
+}
+
+#customRadio2:checked ~ #Sell {display: block;}
+
+
+

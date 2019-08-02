@@ -149,7 +149,7 @@
 <!-----------------------------------------------------S E L L------------------------------------------------------->
     <div class="container bg-light mb-4">
         <div class="py-5 text-center">
-            <h2>Sell Form</h2>
+            <h2 class="mb-5">Sell Form</h2>
              <p class="lead"> Our site allows you to sell X products maximum for free. We hope you will behappy
               with our services and thank you for your trust in Achétou</p> 
         </div>
@@ -265,7 +265,7 @@
                    Please enter your product name.
               </div>
             </div>
-
+          <!--
             <div class="mb-3">
               <label for="product_price">product price</label>
               <input type="text" class="form-control" id="product_price" placeholder="0 DA" required>
@@ -273,6 +273,34 @@
                    Please enter your product price.
               </div>
             </div>
+          -->
+      <!--******************************************************************************-->
+            <div class="d-block my-3">
+                <form method="post" action="#" class="fr">
+                 <h4>TRADE/SELL :</h4>
+
+                   <div  class="custom-control custom-radio">
+                     <input type="radio" name="op_type" id="customRadio2" class="custom-control-input" checked>
+                     <label  class="custom-control-label" for="customRadio2">Sell</label>
+                    
+                     <div class="forSell details" id="Sell">
+                     </div><!--HIDDEN-->
+
+                   </div><!-- 1 -->
+
+                   <div  class="custom-control custom-radio">
+                     <input type="radio" name="op_type" required id="customRadio1" class="custom-control-input">
+                     <label class="custom-control-label" for="customRadio1">Trade</label>
+
+                     <div class="forTrade details" id="Trade">
+                       <textarea class="autoExpand forumPost form-control mb-3" rows="4" data-min-rows="4" id="trade_desc" placeholder="additional information..."></textarea>
+                     </div><!--HIDDEN-->
+                   </div><!-- 2 -->
+
+                </form>
+              </div><!--TRADE/SELL-->
+
+               <!--******************************************************************************-->
         </div> 
       </div>   <!-- row -->
 
