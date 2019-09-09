@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Signup</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{%  static 'common.css'%}" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body class="text-center" style="background-color: #f5f5f5;">
+
+            <form class="form-common" action="{% url 'signup_url' %}" method="post">
+                {% csrf_token %}
+                {% load widget_tweaks %}
+            	<h3>Inscription à Achetou</h3>
+                <h5>C’est rapide et facile.</h5>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        {% render_field form.first_name name="firstname" value="" class="form-control input-lg" placeholder="Prénom" %}
+                     </div>
+                    <div class="col-xs-6 col-md-6">
+                        {% render_field form.last_name name="lastname" value="" class="form-control input-lg" placeholder="Nom " %}
+                    </div>
+                </div>
+                    {% render_field form.username name="username" value="" class="form-control input-lg" placeholder="Username" %}
+                    {% render_field form.email name="email" value="" class="form-control input-lg" placeholder="e-mail" %}
+                    {% render_field form.password1 name="password" value="" class="form-control input-lg" placeholder="mot de passe" %}
+                    {% render_field form.password2 name="confirm_password" value="" class="form-control input-lg" placeholder="confirmer mot de passe" %}
+
+                     <label>Date de naissance</label>
+                          {% render_field form2.date_naissance name="birth_date" type="date" value="" class="form-control input-lg"  %}
+                     <label>Sexe : </label>
+                     {% render_field form2.sexe name="sex" value="" class="form-control input-lg"  %}
+
+                      <label>adresse : </label>
+                     {% render_field form2.adresse name="address" value="" class="form-control input-lg" placeholder="adresse"  %}
+ <label>num : </label>
+                     {% render_field form2.num_tel name="num_tel" value="" class="form-control input-lg" placeholder="numéro de téléphone "  %}
+
+                    <br />
+              <span class="help-block">En appuyant sur Inscription, vous acceptez nos Conditions générales, notre Politique d’utilisation des données et notre Politique d’utilisation des cookies.</span>
+              <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" id="validate">Inscription</button>
+                </br>
+                <div class="a-divider a-divider-break">
+                   <h5> Vous avez déja un compte ? </h5>
+                </div>
+
+              <a tabindex="6" href="{% url "login_url" %}" class="a-button-text" role="button">
+                  Connectez Vous
+              </a>
+
+            </form>
+
+
+
+
+</body>
+</html>
