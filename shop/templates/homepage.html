@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     	<meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>First WebSite Design</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+         {% load static %}
+        <link rel="stylesheet" href="{%  static 'css/homepage.css'%}" type="text/css">
+        <link rel="stylesheet" href="{%  static 'css/header&footer.css'%}" type="text/css">
+    </head>
+    <body>
+<!---------------------------------------------------TopNav-------------------------------------------------------------->
+      <ul class="nav topnav" id="nav1">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">A propos de nous</a>
+        </li>
+      </ul>
+   {% if request.user.is_authenticated  %}
+       <!-- créer le logout-->
+       <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url "logout" %}">Se déconnecter</a>
+        </li>
+      </ul>
+       {% else %}
+        <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login_url' %}">Se connecter</a>
+        </li>
+      </ul>
+   {% endif %}
+<!------------------------------------------------------LogoSearchNav----------------------------------------------------------->
+       <div class="nav" id="navbar">
+        <span class="logo">
+            <a href="homepage.html"><img src="{% static 'img/whitelogo1.png' %}" class="img-fluid" id="logoimg" ></a>
+          </span>
+       <div  class="search">
+        <input type="search" class="form" placeholder="search">
+         <span class="input"><i class="fa fa-search" aria-hidden="true"></i></span>
+       </div>
+       <div class="nav2">
+        <ul>
+         <li class="compte"><a href="#"><i class="fas fa-user-circle"></i>Mon compte</a></li>
+            <li class="panier"><a href="#"><i class="fa fa-shopping-basket"></i>Panier<span class="show"></span></a></li>
+        </ul>
+       </div>
+      </div>
+<!----------------------------------------------------------MegaMenu------------------------------------------------------------------->
+      <div class="nav-3">
+       <ul class="nav3">
+           <li><a href="homepage.html" id="accueil">Accueil</a></li>
+          <li>
+           <a href="#">Catégories</a>
+           <div>
+            <div class="nav-column">
+             <h3>Mode</h3>
+             <ul>
+              <li><a href="#">Vêtements femme</a></li>
+              <li><a href="#">Vêtements homme</a></li>
+              <li><a href="#">Chaussures femme</a></li>
+              <li><a href="#">Chaussures homme</a></li>
+              <li><a href="#">Accessoire femme</a></li>
+              <li><a href="#">Accessoire homme</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Eléctroménager</h3>
+             <ul>
+              <li><a href="#">Télévisions</a></li>
+              <li><a href="#">Eléctroménager</a></li>
+              <li><a href="#">Appareil photo</a></li>
+              <li><a href="#">Audio</a></li>
+              <li><a href="#">Accessoires TV</a></li>
+              <li><a href="#">Caméras</a></li>
+             </ul>
+             <h3>Beauté</h3>
+             <ul>
+              <li><a href="#">Maquillage</a></li>
+              <li><a href="#">Parfum</a></li>
+              <li><a href="#">Cheveux,Coiffure</a></li>
+              <li><a href="#">Soin</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Informatique</h3>
+             <ul>
+              <li><a href="#">Ordinateurs</a></li>
+              <li><a href="#">Téléphones</a></li>
+              <li><a href="#">Tablettes</a></li>
+              <li><a href="#">Périphériques</a></li>
+              <li><a href="#">Imprimantes</a></li>
+              <li><a href="#">Scanners</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Lifestyle</h3>
+             <ul>
+              <li><a href="#">Sports,Fitness</a></li>
+              <li><a href="#">Musique</a></li>
+              <li><a href="#">Accessoires</a></li>
+             </ul>
+             <h3>Autres</h3>
+             <ul>
+              <li><a href="#">Bébé,puériculture</a></li>
+              <li><a href="#">Jeux,jouets</a></li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li><a href="#">Services</a>
+           <div>
+            <div class="nav-column">
+             <h3>Evènements</h3>
+             <ul>
+              <li><a href="#">Restaurants,café</a></li>
+              <li><a href="#">Cameraman,DJ</a></li>
+              <li><a href="#">Salles des fetes</a></li>
+              <li><a href="#">Formations</a></li>
+              <li><a href="#">Décorations</a></li>
+              <li><a href="#">Hotellerie</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Services</h3>
+             <ul>
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Médecin,santé</a></li>
+              <li><a href="#">Nettoyage,jardinage</a></li>
+              <li><a href="#">Beauté</a></li>
+              <li><a href="#">Informatique</a></li>
+              <li><a href="#">Autres</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <img src="{% static 'img/service.jpg' %}" id="service-img">
+             <ul>
+              <li><a id="ajout-service">Ajouter un service</a></li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li><a href="#">Promotions</a></li>
+         </ul>
+        </div>
+<!---------------------------------------CarouselSlider-------------------------------------------------->
+        <div class="slider">
+     	 <div class="bd-example">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+           </ol>
+           <div class="carousel-inner">
+            <div class="carousel-item active">
+      	     <div class="carousel-caption d-none d-md-block caption1">
+              <h5>Bienvenue Chez Achétou </h5>
+              <p>Votre place pour un achat facile et inteligent.</p>
+             </div>
+             <img src="{% static 'img/slide3.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+             <img src="{% static 'img/p770.jpg' %}" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block caption2" >
+               <h5>Achétou vous présente les TOP marques </h5>
+               <h5>pour une meilleure qualité et avec un prix incroyable .</h5>
+              </div>
+             </div>
+            <div class="carousel-item">
+             <img src="{% static 'img/slide11.png' %}" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block caption3">
+              <h5>Découvrez nos nouveaux produits</h5>
+              <p><a href="#">Découvrir</a></p>
+             </div>
+            </div>
+            <div class="carousel-item">
+             <img src="{% static 'img/slide15.png' %}" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block caption4" >
+              <h5>Vous pouvez trouver toutes sortes de services fournis par nos clients</h5>
+              <p><a href="#">Services</a></p>
+             </div>
+            </div>
+            <div class="carousel-item">
+             <img src="{% static 'img/slide81.png' %}" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block caption5">
+              <h5>Ne ratez pas les promos</h5>
+              <p><a href="#">Promo</a></p>
+             </div>
+            </div>
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+           </a>
+          </div>
+         </div>
+        </div>
+<!-----------------------------------------------------Featured-------------------------------------------------------------->
+        <section class="featured-categories">
+    	 <div class="container">
+    	  <div class="row">
+    	   <div class="col-md-4">
+    	    <img src="{% static 'img/slide5.jpg' %}">
+    	    <div class="content-heading">
+             <p> Commencez votre  shopping maintenant<br>
+                 et trouvez ce que vous cherchez ici.
+             <a href="#">Acheter</a></p>
+            </div>
+    	   </div>
+    	   <div class="col-md-4">
+    	    <img src="{% static 'img/slide161.png' %}">
+    	    <div class="content-heading">
+             <p>Consultez nos services, voyez ce <br>
+              que vous recherchez.<br><br>
+             <a href="#">Voir</a></p>
+            </div>
+    	   </div>
+    	   <div class="col-md-4">
+    	    <img src="{% static 'img/img1.jpg' %}">
+    	    <div class="content-heading">
+             <p> Vérifiez les dernières promos.<br><br><br>
+             <a href="#">Consulter</a></p>
+            </div>
+    	   </div>
+    	  </div>
+    	 </div>
+        </section>
+    <!-----------------------------------------------Promo----------------------------------------------------->
+        <section class="promos">
+    	 <div class="container-product-list">
+    	  <div  class="title-box">
+    	   <h2>Promotions</h2>
+    	  </div>
+          <div id="carousel-1" class="carousel slide productsRow" data-ride="carousel" data-interval="false">
+           <div class="carousel-inner">
+            <div class="carousel-item active">
+             <div class="row">
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/pr1.jpg' %}">
+                 <div class="overlay">
+                  <a href="productdetails.html"><button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button></a>
+                  <a href="checkout.html"><button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button></a>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Sweat à capuche pour Homme</h3>
+                 <h6>1800DZD</h6>
+                 <h4>1400DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p2.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Sweat-shirt</h3>
+                 <h6>3500DZD</h6>
+                 <h4>2500DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p7.jpg' %}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Laptop hp</h3>
+                 <h6>75000DZD</h6>
+                 <h4>55000DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p8.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Cuisine en bois jouet</h3>
+                 <h6>2500DZD</h6>
+                 <h4>1000DZD</h4>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="carousel-item">
+             <div class="row">
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                <img src="{% static 'img/p9.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Casque à écouteurs</h3>
+                 <h6>2200DZD</h6>
+                 <h4>1800DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p11.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Smartphone Samsung</h3>
+                 <h6>37000DZD</h6>
+                 <h4>29000DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p17.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Sac</h3>
+                 <h6>5800DZD</h6>
+                 <h4>3400DZD</h4>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p18.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Poussette</h3>
+                 <h6>18000DZD</h6>
+                 <h4>13000DZD</h4>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+           </a>
+          </div>
+    	 </div>
+        </section>
+    <!--------------------------------------------------NewProducts------------------------------------------------------------------------>
+        <section class="promos">
+    	 <div class="container-product-list">
+    	  <div  class="title-box">
+    	   <h2>Produits recents</h2>
+    	  </div>
+          <div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="false">
+           <div class="carousel-inner">
+            <div class="carousel-item active">
+             <div class="row">
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p6.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Pétrin Kewood chef XL </h3>
+                 <h5>35500DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p5.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier"  onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Playstation 4</h3>
+                 <h5>43000DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p4.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier"  onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Bonnet Andrew Crews</h3>
+                 <h5>1400DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p3.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier"  onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Vernis aux ongles doré</h3>
+                 <h5>800DZD</h5>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="carousel-item">
+             <div class="row">
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                <img src="{% static 'img/p15.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier"  onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Canon EOS 500D</h3>
+                 <h5>74000DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p16.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>T-shirt</h3>
+                 <h5>4200DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p12.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Manette gaming</h3>
+                 <h5>6400DZD</h5>
+                </div>
+               </div>
+              </div>
+              <div class="col">
+               <div class="item">
+                <div class="product-top">
+                 <img src="{% static 'img/p10.jpg'%}">
+                 <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="Regarder le produit">
+                   <i class="fa fa-eye f" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" title="Achetez maintenant">
+                   <i class="fas fa-money-check f"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary add" title="Ajouter au panier" onclick="addAndBuy()">
+                   <i class="fas fa-shopping-basket f"></i>
+                  </button>
+                 </div>
+                </div>
+                <div class="product-text">
+                 <h3>Livre : Yasmina khadra ce que le jour doit à la nuit </h3>
+                 <h5>1500DZD</h5>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+           </a>
+          </div>
+    	 </div>
+      </section>
+<!----------------------------------------------Message Alert when adding a product to cart------------------------------------------------>
+      <div id="toast">
+        <div id="desc">
+          <i class="fa fa-cart-plus"></i>
+          <span>Le produit est ajouté à votre panier.</span>
+        </div>
+      </div>
+
+<!----------------------------------------------------------------Footer---------------------------------------------------------->
+      <section class="footer">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col" id="col-lg-2">
+              <div class="footer-title">
+                <h4>Liens</h4>
+              </div>
+              <ul>
+                <li><a href="homepage.html">Accueil</a></li>
+                <li><a href="#">A propos de nous</a></li>
+                <li><a href="#">Aide</a></li>
+               <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col" id="col-lg-3">
+                <div class="logo2"><a href="homepage.html"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
+                <div class="bottom">
+                  <div class="footer-title">
+                    <h4>Suivez nous</h4>
+                  </div>
+                  <ul class="footer-social">
+                    <li><a href="" target="_blank"><i class="fab fa-facebook f1"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram f1"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-google-plus-square f1"></i></a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col" id="col-lg-4">
+              <div class="footer-title">
+                <h4>Informations</h4>
+              </div>
+              <ul>
+                <li><a href="#">Livraison</a></li>
+                <li><a href="#">Paiement</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<script type="text/javascript" src=" {% static 'js/javascript2.js' %}" type="text/javascript">
+ </script>
+    </body>
+</html>

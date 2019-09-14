@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <title>Signin</title>
+
+</head>
+
+<body class="text-center">
+    <form class="form-common" action="{% url 'login_url' %}" method="post">
+        {% csrf_token %}
+        {% load widget_tweaks %}
+
+        <h1 class="h3 mb-3 font-weight-normal">Connecter-vous à Achétou</h1>
+        <label for="inputEmail" class="sr-only">Username</label>
+        {% render_field form.username name="username"  class="form-control " placeholder="nom utilisateur" type="text" id="inputEmail"   %}
+    </br>
+        <label for="inputPassword" class="sr-only">Mot de passe</label>
+                {% render_field form.password name="password"  class="form-control " placeholder="Mot de passe" type="password" id="inputPassword"   %}
+
+        <div class="checkbox mb-3">
+            <label>
+            <input type="checkbox" value="remember-me">souvenez-vous de moi
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="validate">Se Connecter</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+        </br></br>
+        <div class="a-divider a-divider-break">
+           <h5> Nouveau chez Achétou? </h5>
+        </div>
+
+        <a tabindex="6" href="{% url "signup_url" %}" class="a-button-text" role="button">
+          Créer votre compte Achétou
+        </a>
+    </form>
+
+</body>
+
+</html>

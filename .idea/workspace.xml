@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e6feb20-05bd-4213-b64b-e16b61f9014c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/Header&amp;footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/Header&amp;footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/ProductDetails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/checkout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/homepage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/2p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/770.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/logo31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/pr1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/pr2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/pr3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/service.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slide9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/slider6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/whitelogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/img/whitelogo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/javascript2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/login/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/login/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/avatar1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/free_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/images/icon6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/javascript3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/sell.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/sell.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/sell_service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/serviceForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/servicePost.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/services.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finished/sell/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new pages/homepage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new pages/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/home/header&amp;footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/home/homepage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/2p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p770.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/pr1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/pr2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/pr3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/service.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slide9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/slider6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/whitelogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/whitelogo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/javascript2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ProductDetails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/panier.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/product/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/product/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/templates/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="e#1#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/templates/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/templates/Header&amp;footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>javascript</find>
+      <find>src</find>
+      <find>log</find>
+      <find>panier</find>
+      <find>css</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/shop/froms.py" />
+        <option value="$PROJECT_DIR$/shop/static/home/homepage.css" />
+        <option value="$PROJECT_DIR$/shop/templates/registration/logout.html" />
+        <option value="$PROJECT_DIR$/shop/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/shop/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/shop/templates/registration/panier.html" />
+        <option value="$PROJECT_DIR$/commerce/urls.py" />
+        <option value="$PROJECT_DIR$/panier/forms.py" />
+        <option value="$PROJECT_DIR$/shop/admin.py" />
+        <option value="$PROJECT_DIR$/shop/models.py" />
+        <option value="$PROJECT_DIR$/panier/templates/detail.html" />
+        <option value="$PROJECT_DIR$/panier/urls.py" />
+        <option value="$PROJECT_DIR$/panier/cart.py" />
+        <option value="$PROJECT_DIR$/panier/views.py" />
+        <option value="$PROJECT_DIR$/commerce/settings.py" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/list.html" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/product/detail.html" />
+        <option value="$PROJECT_DIR$/shop/urls.py" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/product/list.html" />
+        <option value="$PROJECT_DIR$/shop/templates/detail.html" />
+        <option value="$PROJECT_DIR$/panier/templates/panier/detail.html" />
+        <option value="$PROJECT_DIR$/shop/templates/list.html" />
+        <option value="$PROJECT_DIR$/shop/templates/ProductDetails.html" />
+        <option value="$PROJECT_DIR$/shop/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/shop/templates/login.html" />
+        <option value="$PROJECT_DIR$/shop/templates/Header&amp;footer.html" />
+        <option value="$PROJECT_DIR$/shop/views.py" />
+        <option value="$PROJECT_DIR$/shop/forms.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="381" />
+    <option name="y" value="75" />
+    <option name="width" value="855" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Git project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\PycharmProjects\commerce\shop\templates\shop\product" />
+      <recent name="C:\Users\ASUS\PycharmProjects\commerce\panier\templates\panier" />
+      <recent name="C:\Users\ASUS\PycharmProjects\commerce\shop\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\PycharmProjects\commerce\shop\static" />
+      <recent name="C:\Users\ASUS\PycharmProjects\commerce\shop\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="commerce" type="Python.DjangoServer" factoryName="Django server">
+      <module name="commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e6feb20-05bd-4213-b64b-e16b61f9014c" name="Default Changelist" comment="" />
+      <created>1567854778503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567854778503</updated>
+      <workItem from="1567855148061" duration="2000000" />
+      <workItem from="1567857278963" duration="10288000" />
+      <workItem from="1567890991864" duration="26762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39050000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16596417" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5785482" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shop/froms.py" />
+    <entry file="file://$PROJECT_DIR$/Shop/static/common.css" />
+    <entry file="file://$PROJECT_DIR$/Shop/static/javascript.js" />
+    <entry file="file://$PROJECT_DIR$/shop/static/2p2.jpg" />
+    <entry file="file://$PROJECT_DIR$/shop/static/1.png" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/widget_tweaks/templatetags/widget_tweaks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/static/p5.jpg" />
+    <entry file="file://$PROJECT_DIR$/Shop/static/home/homepage.css" />
+    <entry file="file://$PROJECT_DIR$/shop/static/slide3.jpg" />
+    <entry file="file://$PROJECT_DIR$/shop/templates/registration/logout.html" />
+    <entry file="file://$PROJECT_DIR$/Shop/templates/registration/login.html" />
+    <entry file="file://$PROJECT_DIR$/Shop/templates/registration/signup.html" />
+    <entry file="file://$PROJECT_DIR$/Shop/templates/registration/panier.html" />
+    <entry file="file://$PROJECT_DIR$/shop/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commerce/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="527" selection-start-line="527" selection-end-line="527" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shop/templates/shop/product/detail.html" />
+    <entry file="file://$PROJECT_DIR$/Shop/templates/shop/product/list.html" />
+    <entry file="file://$PROJECT_DIR$/commerce/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/templates/panier/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#a#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/ProductDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" column="91" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/panier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#1#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/Header&amp;footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

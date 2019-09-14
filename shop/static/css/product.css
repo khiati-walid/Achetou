@@ -1,0 +1,308 @@
+
+/***********************************************************BreadCrumb Nav************************/
+.BC
+{
+   margin-left:30px;
+   margin-top: 10px;
+}
+.BCNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding:32px;
+  color: #1D2951;
+}
+
+.BCNav li {
+  display: inline-block;
+  position: relative;
+  padding-right:32px;
+  margin: 0;
+}
+.BCNav   li:after {
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width:32px;
+    text-align: center;
+  }
+.BCNav li:last-child {
+  font-weight: bold;
+}
+.BCNav li:last-child:after {
+    content: '';
+  }
+
+.BCNav a {
+  text-decoration: none;
+  display: inline-block;
+  color: #555555;
+  white-space: nowrap;
+  font-size: 16px;
+}
+.BCNav  a:hover {
+    text-decoration: underline;
+    color: #1D2951;
+  }
+/*************************************************************product images gallery********************************************************/
+.container{
+	margin-top:40px;
+}
+.container p{font-size: 16px;}
+.col1{
+	width: 50%;
+}
+.slide
+{
+	display: none;
+	width:400px;
+	height:430px;
+	margin-left: 140px;
+}
+.slide img
+{
+	width: 400px;
+	height:430px;
+}
+.cursor 
+{
+  cursor: pointer;
+}
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column 
+{
+  float: left;
+  width:133.5px;
+  height: 150px;
+}
+.column img{
+	width: 133.5px;
+	height: 150px;
+}
+.first{
+	 margin-left:140px;
+}
+.demo 
+{
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.col2{
+	width: 50%;
+}
+.styled-select {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+}
+.styled-select, .styled-select select { width:150px; height: 30px;}
+select:focus { outline: none; }
+.select2{
+	margin-left: 50px;
+}
+.quantité{
+	margin-top: 20px;
+}
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 5px 0px #D4D5D4;
+}
+hr:after {  
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+
+.tab {
+  overflow: hidden;
+  height:50px;
+  margin-top:8px;
+}
+#target2{
+	margin-left: 20px;
+}
+/* Style the buttons that are used to open the tab content */
+.tab a{
+  float: left;
+  outline: none;
+  cursor: pointer;
+  height: 43px;
+  padding: 14px 6px;
+  text-decoration: none; 
+  color: black;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+ }
+.tab .active{
+	border-bottom-width:50px;
+	border-bottom: solid #094074;
+	color: #094074;
+}
+.tab a:hover{
+	color: #094074;
+	text-decoration: none; 
+}
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  display: none;
+  height: 80px;
+}
+#informations ul{
+	list-style-type: none;
+	margin-left: 105px;
+}
+#informations ul li{
+	text-decoration: none;
+}
+.row2{
+	margin-left: 130px; 
+	margin-top: 20px;
+	height:50px;
+	width: 430px;
+}
+.row2 .button {
+  
+  float: left;
+  width: 170px;
+   margin: 0 40px 10px 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+.row2 .button:hover{
+	text-decoration: none;
+	background: #464F70;
+}
+.buyNow{
+	text-decoration: none;
+    background: #1D2951;
+}
+.buy{
+	outline: none;
+    background: #1D2951;
+}
+.row3{
+	margin-top: 80px;
+	margin-left: 120px;
+}
+.askInput{
+	width: 500px;
+	height: 50px;
+	margin: 10px 0;
+
+}
+.envoyerInput{
+	outline: none;
+	margin: 8px 0;
+	border-width:0.5px;
+	width:100px;
+    /*border-radius*/
+    border-radius: 100px;
+    background: #fff;
+    border: 5px solid #1D2951;
+}
+
+/**************************************************Add toCart Alert******************************************/
+#toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #desc{
+
+    
+    color: #fff;
+   
+    padding: 16px;
+    margin-left: 0px;
+    overflow: hidden;
+  white-space: nowrap;
+}
+#toast #desc .fa-cart-plus{
+  float: left;
+  margin-left:0px;
+}
+#toast #desc span{
+  margin-left:50px;
+}
+#toast.appear {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}

@@ -1,0 +1,43 @@
+.checkoutForm{
+	width: 85%;
+	margin:20px 100px 60px 60px;
+}
+#montant h5{
+	color: #1D2951;
+}
+.details{
+  display: none;
+}
+#customRadio2:checked + .fordebit {
+  display: block;
+}
+input[type=radio]:checked + .forcredit {
+  display: block;
+}
+input[type=radio] {
+  float:left;
+}
+#save-info:checked+label:before {
+	background-color: #1D2951;
+}
+#defaultUnchecked:checked+label:before,#defaultChecked:checked+label:before{
+background:#1D2951;
+}
+#credit, #debit { display: none;}
+#customRadio1:checked ~ #credit {display: block;} 
+#customRadio2:checked ~ #cpp {display: block;}
+#customRadio1:checked+label:before, #customRadio2:checked+label:before{
+background:#1D2951;
+}
+#customRadio3:checked+label:before{
+background:#1D2951;
+}
+#finaliser{
+	background-color: #1D2951;
+}
+.form-control:focus{
+	 box-shadow:0px 0px 8px 0px rgba(29,41,81,1);
+}
+.custom-select:focus{
+	 box-shadow:0px 0px 8px 0px rgba(29,41,81,1);
+}
