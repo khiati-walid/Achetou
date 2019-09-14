@@ -27,12 +27,18 @@
    {% if request.user.is_authenticated  %}
        <!-- créer le logout-->
        <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item justify-content-end">
+          <a class="nav-link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Suivre nos promotions</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url "logout" %}">Se déconnecter</a>
         </li>
       </ul>
        {% else %}
         <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item justify-content-end">
+          <a class="nav-link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Suivre nos promotions</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'login_url' %}">Se connecter</a>
         </li>
