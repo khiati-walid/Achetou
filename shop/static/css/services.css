@@ -99,11 +99,15 @@
 
 
 .annonce h2 {
-    color: #363838;
+    color: #555555;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;   
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.annonce a {
+    color: #555555;
 }
 
 .annonce .tarif {
@@ -206,7 +210,7 @@ ul.cats {
 
 ul.cats li a {
     font-size: 14px;
-    color: #363838;
+    color: ##555555;
     font-family: 'Open Sans Light', sans-serif;
     line-height: 30px;
 }
