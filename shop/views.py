@@ -16,6 +16,14 @@ def product_page(request):
 
 
 
+def services_page(request):
+    return render(request,'services.html',locals())
+
+def reservation_page(request):
+    return render(request,'reservation.html',locals())
+
+
+
 def signup_page(request):
     if request.method == "POST":
         form = signupForm(request.POST or None)

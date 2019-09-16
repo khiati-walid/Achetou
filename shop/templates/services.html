@@ -4,8 +4,10 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>Services</title>
-        <link rel="stylesheet" type="text/css" href="../Header&footer.css">
-        <link rel="stylesheet" type="text/css" href="services.css">
+        
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/Header&footer.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +37,8 @@
 <!------------------------------------------------------LogoSearchNav----------------------------------------------------------->
        <div class="nav" id="navbar">
         <span class="logo">
-            <img src="..\img\whitelogo1.png" class="img-fluid" id="logoimg">
+            <img src="{% static 'img/whitelogo1.png' %}" class="img-fluid" id="logoimg">
+
           </span>
        <div  class="search">
         <input type="search" class="form" placeholder="search">
@@ -181,11 +184,11 @@
 	                                <div class="wrap-ut pull-left">
 	                                    <div class="annoncepic pull-left">
 	                                        <div class="avatar">
-	                                            <img src="1.jpeg" alt="" />	                                            
+	                                            <img src="{% static 'img/1.jpeg' %}" alt="" />	                                            
 	                                        </div>	                                        
 	                                    </div>
 	                                    <div class="annoncetext pull-left">
-	                                        <h2><a href="01_topic.html">VIA ROMA</a></h2>
+	                                        <h2><a href="{% url 'reservation_url' %}">VIA ROMA</a></h2>
 	                                        <p>Via Roma est situé à Pontet, juste à coté du Grand Cinéma Multiplexe  Capitole Studios !.</p>
 	                                    </div>
 	                                    <div class="clearfix"></div>
@@ -208,11 +211,11 @@
 	                                <div class="wrap-ut pull-left">
 	                                    <div class="annoncepic pull-left">
 	                                        <div class="avatar">
-	                                            <img src="2.jpg" alt="" />	                                            
+	                                            <img src="{% static 'img/2.jpg' %}" alt="" />	                                            
 	                                        </div>	                                        
 	                                    </div>
 	                                    <div class="annoncetext pull-left">
-	                                        <h2><a href="01_topic.html">Le Bruegel</a></h2>
+	                                        <h2><a href="{% url 'reservation_url' %}">Le Bruegel</a></h2>
 	                                        <p>Si je vous dis Bergues vous pensez à quoi ? A bienvenue chez les Ch'ti ? Et bien aujourd'hui vous avez rendez vous au restaurant Le Bruegel ! .</p>
 	                                    </div>
 	                                    <div class="clearfix"></div>
@@ -235,11 +238,11 @@
 	                                <div class="wrap-ut pull-left">
 	                                    <div class="annoncepic pull-left">
 	                                        <div class="avatar">
-	                                            <img src="3.jpg" alt="" />	                                            
+	                                            <img src="{% static 'img/3.jpg' %}" alt="" />	                                            
 	                                        </div>	                                        
 	                                    </div>
 	                                    <div class="annoncetext pull-left">
-	                                        <h2><a href="01_topic.html">EL FIRDAOUS</a></h2>
+	                                        <h2><a href="{% url 'reservation_url' %}">EL FIRDAOUS</a></h2>
 	                                        <p>Bienvenue au Restaurant El Firdaous, situé dans le quartier de Gambetta à Oran, près du boulevard Wahrani Boumedienne (Trait d’union).</p>
 	                                    </div>
 	                                    <div class="clearfix"></div>
@@ -325,7 +328,7 @@
               </ul>
             </div>
             <div class="col" id="col-lg-3">
-                <div class="logo2"><img src="..\img\logo31.png" class="logof"></div>
+                <div class="logo2"><img src="{% static 'img/logo31.png' %}" class="logof"></div>
                 <div class="bottom">
                   <div class="footer-title">
                     <h4>Suivez nous</h4>

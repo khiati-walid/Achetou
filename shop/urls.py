@@ -10,6 +10,10 @@ urlpatterns = [
     path("login/", views.login_page, name="login_url"),
     path("product/", views.product_page, name="product_url"),
 
+    path("services/", views.services_page, name="services_url"),
+    path("reservation/", views.reservation_page, name="reservation_url"),
+
+
     url(r'^$', views.product_list,
         name='product_list'),
     url(r'^(?P<category_slug>[-\w]+)/$',
