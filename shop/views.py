@@ -19,8 +19,8 @@ def product_page(request):
 def services_page(request):
     return render(request,'services.html',locals())
 
-def reservation_page(request):
-    return render(request,'reservation.html',locals())
+#def reservation_page(request):
+    #return render(request,'reservation.html',locals())
 
 
 
@@ -94,3 +94,14 @@ def product_detail(request, product_id, slug):
                   'shop/product/detail.html',
                   {'product': product,
                    'cart_product_form': cart_product_form})
+
+
+
+def reservation_page(request):
+    form = reservationForm()
+    if request.method == "POST":
+        form= reservationForm(request.Post)
+        if form.is_valid():
+            form.save()
+
+    return render(request, 'reservation.html', {'form':form})

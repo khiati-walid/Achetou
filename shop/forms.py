@@ -16,6 +16,8 @@ class signupForm(UserCreationForm):
             'password1':'password',
             'password2': 'confirm password',
         }
+
+
         widgets = {
             'first_name':forms.TextInput(attrs={
                 'type': 'text',
@@ -63,3 +65,10 @@ class utilisateurForm (forms.ModelForm):
         model = utilisateur
         fields = ("adresse","date_naissance","num_tel","sexe",)
         exclude =("user",)
+
+
+class reservationForm(forms.ModelForm):
+    class Meta:
+        model =reservation
+        fields = ("nom","date","email","time","num_tel","description")
+

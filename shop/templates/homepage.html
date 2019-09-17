@@ -3,7 +3,7 @@
     <head>
      	<meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>First WebSite Design</title>
+        <title>Achetou dz shop</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +31,7 @@
           <a class="nav-link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Suivre nos promotions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url "logout" %}">Se déconnecter</a>
+          <a class="nav-link" href="{% url 'logout' %}">Se déconnecter</a>
         </li>
       </ul>
        {% else %}
@@ -47,7 +47,7 @@
 <!------------------------------------------------------LogoSearchNav----------------------------------------------------------->
        <div class="nav" id="navbar">
         <span class="logo">
-            <a href="homepage.html"><img src="{% static 'img/whitelogo1.png' %}" class="img-fluid" id="logoimg" ></a>
+            <a href="/"><img src="{% static 'img/whitelogo1.png' %}" class="img-fluid" id="logoimg" ></a>
           </span>
        <div  class="search">
         <input type="search" class="form" placeholder="search">
@@ -127,7 +127,7 @@
             <div class="nav-column">
              <h3>Evènements</h3>
              <ul>
-              <li><a href="{% url "services_url" %}">Restaurants,café</a></li>
+              <li><a href="{% url 'services_url' %}">Restaurants,café</a></li>
               <li><a href="#">Cameraman,DJ</a></li>
               <li><a href="#">Salles des fetes</a></li>
               <li><a href="#">Formations</a></li>
@@ -138,7 +138,7 @@
             <div class="nav-column">
              <h3>Services</h3>
              <ul>
-              <li><a href="{% url "services_url" %}">Restaurant</a></li>
+              <li><a href="{% url 'services_url' %}">Restaurant</a></li>
               <li><a href="#">Médecin,santé</a></li>
               <li><a href="#">Nettoyage,jardinage</a></li>
               <li><a href="#">Beauté</a></li>
@@ -686,7 +686,7 @@
               </ul>
             </div>
             <div class="col" id="col-lg-3">
-                <div class="logo2"><a href="homepage.html"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
+                <div class="logo2"><a href="/"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
                 <div class="bottom">
                   <div class="footer-title">
                     <h4>Suivez nous</h4>

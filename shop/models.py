@@ -66,3 +66,11 @@ class service(models.Model):
   discription_service= models.TextField()
 
 
+class reservation(models.Model):
+    nom = models.CharField(max_length=30)
+    date = models.DateField()
+    email = models.EmailField()
+    time = models.DateTimeField()
+    num_tel = models.CharField(max_length=10)
+    description = models.TextField()
+
