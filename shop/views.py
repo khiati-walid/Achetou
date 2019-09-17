@@ -100,7 +100,7 @@ def product_detail(request, product_id, slug):
 def reservation_page(request):
     form = reservationForm()
     if request.method == "POST":
-        form= reservationForm(request.Post)
+        form= reservationForm(request.POST)
         if form.is_valid():
             form.save()
 
