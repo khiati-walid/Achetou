@@ -21,7 +21,7 @@
           <a class="nav-link" href="#">Aide</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">A propos de nous</a>
+          <a class="nav-link" href="{% url 'about_us_url' %}">A propos de nous</a>
         </li>
       </ul>
    {% if request.user.is_authenticated  %}
@@ -680,7 +680,7 @@
               </div>
               <ul>
                 <li><a href="homepage.html">Accueil</a></li>
-                <li><a href="#">A propos de nous</a></li>
+                <li><a href="{% url 'about_us_url' %}">A propos de nous</a></li>
                 <li><a href="#">Aide</a></li>
                <li><a href="#">Contact</a></li>
               </ul>

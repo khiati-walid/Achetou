@@ -1,0 +1,22 @@
+
+/****************************about us************************************/
+
+.paddingTB60 {padding:60px 0px 60px 0px;}
+.gray-bg {background: rgb(255, 255, 255)!important;}
+.about-title h1 {color: #535353; font-size:45px;font-weight:600;margin-bottom:20px; }
+.about-title span {color: #AF0808; font-size:45px;font-weight:700;}
+.about-title h3 {color: #535353; font-size:23px;margin-bottom:15px;}
+.about-title h2{margin-bottom:24px}
+.about-title p {color: #7a7a7a;line-height: 1.8;margin: 0 0 15px;}
+.about-paddingB {padding-bottom: 20px;}
+.about-img {padding-left: 57px;}
+
+/* Social Icons */
+.imgicon{
+    width:50px;
+	height: 50px;
+}
+.about-icons {margin:48px 0px 48px 0px ;}
+.about-icons i{margin-right: 10px;padding: 0px; font-size:35px;color:#323232;box-shadow: 0 0 3px rgba(0, 0, 0, .2);}
+.about-icons li {margin:0px;padding:0;display:inline-block;}
+ 

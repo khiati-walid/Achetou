@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     	<meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Apropos de nous</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+         {% load static %}
+        <link rel="stylesheet" href="{%  static 'css/about us.css'%}" type="text/css">
+        <link rel="stylesheet" href="{%  static 'css/header&footer.css'%}" type="text/css">
+    </head>
+    <body>
+<!---------------------------------------------------TopNav-------------------------------------------------------------->
+      <ul class="nav topnav" id="nav1">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">A propos de nous</a>
+        </li>
+      </ul>
+   {% if request.user.is_authenticated  %}
+       <!-- créer le logout-->
+       <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item justify-content-end">
+          <a class="nav-link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Suivre nos promotions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">Se déconnecter</a>
+        </li>
+      </ul>
+       {% else %}
+        <ul class="nav justify-content-end topnav" id="nav2">
+        <li class="nav-item justify-content-end">
+          <a class="nav-link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Suivre nos promotions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login_url' %}">Se connecter</a>
+        </li>
+      </ul>
+   {% endif %}
+<!------------------------------------------------------LogoSearchNav----------------------------------------------------------->
+       <div class="nav" id="navbar">
+        <span class="logo">
+            <a href="/"><img src="{% static 'img/whitelogo1.png' %}" class="img-fluid" id="logoimg" ></a>
+          </span>
+       <div  class="search">
+        <input type="search" class="form" placeholder="search">
+         <span class="input"><i class="fa fa-search" aria-hidden="true"></i></span>
+       </div>
+       <div class="nav2">
+        <ul>
+         <li class="compte"><a href="#"><i class="fas fa-user-circle"></i>Mon compte</a></li>
+            <li class="panier"><a href="#"><i class="fa fa-shopping-basket"></i>Panier<span class="show"></span></a></li>
+        </ul>
+       </div>
+      </div>
+<!----------------------------------------------------------MegaMenu------------------------------------------------------------------->
+      <div class="nav-3">
+       <ul class="nav3">
+           <li><a href="homepage.html" id="accueil">Accueil</a></li>
+          <li>
+           <a href="#">Catégories</a>
+           <div>
+            <div class="nav-column">
+             <h3>Mode</h3>
+             <ul>
+              <li><a href="#">Vêtements femme</a></li>
+              <li><a href="#">Vêtements homme</a></li>
+              <li><a href="#">Chaussures femme</a></li>
+              <li><a href="#">Chaussures homme</a></li>
+              <li><a href="#">Accessoire femme</a></li>
+              <li><a href="#">Accessoire homme</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Eléctroménager</h3>
+             <ul>
+              <li><a href="#">Télévisions</a></li>
+              <li><a href="#">Eléctroménager</a></li>
+              <li><a href="#">Appareil photo</a></li>
+              <li><a href="#">Audio</a></li>
+              <li><a href="#">Accessoires TV</a></li>
+              <li><a href="#">Caméras</a></li>
+             </ul>
+             <h3>Beauté</h3>
+             <ul>
+              <li><a href="#">Maquillage</a></li>
+              <li><a href="#">Parfum</a></li>
+              <li><a href="#">Cheveux,Coiffure</a></li>
+              <li><a href="#">Soin</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Informatique</h3>
+             <ul>
+              <li><a href="#">Ordinateurs</a></li>
+              <li><a href="#">Téléphones</a></li>
+              <li><a href="#">Tablettes</a></li>
+              <li><a href="#">Périphériques</a></li>
+              <li><a href="#">Imprimantes</a></li>
+              <li><a href="#">Scanners</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Lifestyle</h3>
+             <ul>
+              <li><a href="#">Sports,Fitness</a></li>
+              <li><a href="#">Musique</a></li>
+              <li><a href="#">Accessoires</a></li>
+             </ul>
+             <h3>Autres</h3>
+             <ul>
+              <li><a href="#">Bébé,puériculture</a></li>
+              <li><a href="#">Jeux,jouets</a></li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li><a href="#">Services</a>
+           <div>
+            <div class="nav-column">
+             <h3>Evènements</h3>
+             <ul>
+              <li><a href="{% url 'services_url' %}">Restaurants,café</a></li>
+              <li><a href="#">Cameraman,DJ</a></li>
+              <li><a href="#">Salles des fetes</a></li>
+              <li><a href="#">Formations</a></li>
+              <li><a href="#">Décorations</a></li>
+              <li><a href="#">Hotellerie</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <h3>Services</h3>
+             <ul>
+              <li><a href="{% url 'services_url' %}">Restaurant</a></li>
+              <li><a href="#">Médecin,santé</a></li>
+              <li><a href="#">Nettoyage,jardinage</a></li>
+              <li><a href="#">Beauté</a></li>
+              <li><a href="#">Informatique</a></li>
+              <li><a href="#">Autres</a></li>
+             </ul>
+            </div>
+            <div class="nav-column">
+             <img src="{% static 'img/service.jpg' %}" id="service-img">
+             <ul>
+              <li><a id="ajout-service">Ajouter un service</a></li>
+             </ul>
+            </div>
+           </div>
+          </li>
+          <li><a href="#">Promotions</a></li>
+         </ul>
+        </div>
+
+<!-------------------------------------------------about us-------------------------------------->
+<div class="about-section paddingTB60 gray-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-6">
+        <div class="about-title clearfix">
+          <h1><span>Achétou</span></h1>
+          <h2>Notre concept, notre histoire, notre équipe </h2>
+          <h3>Notre concept</h3>
+          <p class="about-paddingB">Achétou est un site algérien qui permet aux clients de commander des produits et services en toute simplicité de plusieurs catégories: Mode, Eléctroménager, Beauté, Informatique, Mode de vie...etc.Plus que la simple mise en relation, notre mission est de revolutuioner le secteur de commerce électronique en gérant de A à Z les prestations de nos clients, en respectant trois promesses : une experience simple, de qualité et avec notre engagement le plus total.</p>
+          <h3>Notre histoire</h3>
+          <p class="about-paddingB">Nous avons été embauchés pour mission de participer à améliorer le monde dans lequel nous vivons, un monde sans obstacles sans difficultés pour avoir nos besoins de produits et services, un monde qui nous permet de faire nos achats à domicile.</p>
+          <h3>Notre équipe</h3>
+          <p class="about-paddingB">Notre équipe de six étudiants venues de l'école superieur d'Informatique (ESI-SBA) contribue chaque jour à la réalisation de cette mission avec passion dans le but de satifsaire nos clients.</p>
+            <div class="about-icons"> 
+              <ul >
+                <li><a href="https://www.facebook.com/"><img src="{% static 'img\fb.png'%}" id="social-fb" class="imgicon"></a> </li>
+                <li><a href="https://twitter.com/"><img src="{% static 'img\tw.png'%}" id="social-tw" class="imgicon"></a> </li>
+                <li> <a href="https://instagram.com"><img src="{% static 'img\inst.png'%}" id="social-em" class="imgicon"></a> </li>
+                <li> <a href="https://plus.google.com/"><img src="{% static 'img\gp.png'%}" id="social-gp" class="imgicon"></a> </li>
+              </ul>       
+            </div>
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>              
+<!--------------------------------------------------------Footer--------------------------------->
+<section class="footer">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col" id="col-lg-2">
+        <div class="footer-title">
+          <h4>Liens</h4>
+        </div>
+        <ul>
+          <li><a href="homepage.html">Accueil</a></li>
+          <li><a href="#">A propos de nous</a></li>
+          <li><a href="#">Aide</a></li>
+         <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col" id="col-lg-3">
+          <div class="logo2"><a href="/"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
+          <div class="bottom">
+            <div class="footer-title">
+              <h4>Suivez nous</h4>
+            </div>
+            <ul class="footer-social">
+              <li><a href="" target="_blank"><i class="fab fa-facebook f1"></i></a></li>
+              <li><a href="" target="_blank"><i class="fab fa-instagram f1"></i></a></li>
+              <li><a href="" target="_blank"><i class="fab fa-google-plus-square f1"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="col" id="col-lg-4">
+        <div class="footer-title">
+          <h4>Informations</h4>
+        </div>
+        <ul>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Paiement</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" src=" {% static 'js/javascript2.js' %}" type="text/javascript">
+</script>
+</body>
+</html>

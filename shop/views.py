@@ -10,6 +10,9 @@ from panier.forms import CartAddProductForm
 def homepage(request):
     return render(request,'homepage.html',locals())
 
+def about_us(request):
+    return render(request,'about_us.html',locals())
+
 
 def product_page(request):
     return render(request,'ProductDetails.html',locals())
