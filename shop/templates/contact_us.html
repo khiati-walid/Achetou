@@ -3,7 +3,7 @@
     <head>
      	<meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>Apropos de nous</title>
+        <title>Contactez nous</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
          {% load static %}
-        <link rel="stylesheet" href="{%  static 'css/about us.css'%}" type="text/css">
+        <link rel="stylesheet" href="{%  static 'css/contact us.css'%}" type="text/css">
         <link rel="stylesheet" href="{%  static 'css/header&footer.css'%}" type="text/css">
     </head>
     <body>
@@ -158,77 +158,87 @@
          </ul>
         </div>
 
-<!-------------------------------------------------about us-------------------------------------->
-<div class="about-section paddingTB60 gray-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-6">
-        <div class="about-title clearfix">
-          <h1><span>Achétou</span></h1>
-          <h2>Notre concept, notre histoire, notre équipe </h2>
-          <h3>Notre concept</h3>
-          <p class="about-paddingB">Achétou est un site algérien qui permet aux clients de commander des produits et services en toute simplicité de plusieurs catégories: Mode, Eléctroménager, Beauté, Informatique, Mode de vie...etc.Plus que la simple mise en relation, notre mission est de revolutuioner le secteur de commerce électronique en gérant de A à Z les prestations de nos clients, en respectant trois promesses : une experience simple, de qualité et avec notre engagement le plus total.</p>
-          <h3>Notre histoire</h3>
-          <p class="about-paddingB">Nous avons été embauchés pour mission de participer à améliorer le monde dans lequel nous vivons, un monde sans obstacles sans difficultés pour avoir nos besoins de produits et services, un monde qui nous permet de faire nos achats à domicile.</p>
-          <h3>Notre équipe</h3>
-          <p class="about-paddingB">Notre équipe de six étudiants venues de l'école superieur d'Informatique (ESI-SBA) contribue chaque jour à la réalisation de cette mission avec passion dans le but de satifsaire nos clients.</p>
-            <div class="about-icons"> 
-              <ul >
-                <li><a href="https://www.facebook.com/"><img src="{% static 'img\fb.png'%}" id="social-fb" class="imgicon"></a> </li>
-                <li><a href="https://twitter.com/"><img src="{% static 'img\tw.png'%}" id="social-tw" class="imgicon"></a> </li>
-                <li> <a href="https://instagram.com"><img src="{% static 'img\inst.png'%}" id="social-em" class="imgicon"></a> </li>
-                <li> <a href="https://plus.google.com/"><img src="{% static 'img\gp.png'%}" id="social-gp" class="imgicon"></a> </li>
-              </ul>       
+<!----------------------------------------------contact us--------------------------------------->
+<br />
+<div class="inner contact">
+     <!-- Form Area -->
+    <div class="contact-form">
+        <!-- Form -->
+        <form id="contact-us" method="post" action="#">
+             <!-- Left Inputs -->
+            <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                <!-- Name -->
+                <input type="text" name="name" id="name" required="required" class="place" placeholder="Nom & prenom" />
+                <!-- Email -->
+                <input type="email" name="mail" id="mail" required="required" class="place" placeholder="Email" />
+                <!-- Subject -->
+                <input type="text" name="subject" id="subject" required="required" class="place" placeholder="Sujet" />
+            </div><!-- End Left Inputs -->
+            <!-- Right Inputs -->
+            <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                <!-- Message -->
+                <textarea name="message" id="message" class="place textarea"  placeholder="Message"></textarea>
+            </div><!-- End Right Inputs -->
+            <!-- Bottom Submit -->
+            <div class="relative fullwidth col-xs-12">
+                <!-- Send Button -->
+                <button type="submit" id="submit" name="submit" class="place-btn bold">Envoyer message</button> 
+            </div><!-- End Bottom Submit -->
+            <!-- Clear -->
+            <div class="clear"></div>
+        </form>
+
+        <!-- Your Mail Message -->
+        <div class="mail-message-area">
+            <!-- Message -->
+            <div class="alert gray-bg mail-message not-visible-message">
+                <strong>Thank You !</strong> Your email has been delivered.
             </div>
         </div>
-      </div>	
-    </div>
-  </div>
-</div>              
+
+    </div><!-- End Contact Form Area -->
+</div><!-- End Inner -->
+        
 <!--------------------------------------------------------Footer--------------------------------->
-<section class="footer">
-  <div class="container">
-    <div class="row align-items-start">
-      <div class="col" id="col-lg-2">
-        <div class="footer-title">
-          <h4>Liens</h4>
-        </div>
-        <ul>
-          <li><a href="homepage.html">Accueil</a></li>
-          <li><a href="#">A propos de nous</a></li>
-          <li><a href="#">Aide</a></li>
-         <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col" id="col-lg-3">
-          <div class="logo2"><a href="/"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
-          <div class="bottom">
-            <div class="footer-title">
-              <h4>Suivez nous</h4>
+      <section class="footer">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col" id="col-lg-2">
+              <div class="footer-title">
+                <h4>Liens</h4>
+              </div>
+              <ul>
+                <li><a href="homepage.html">Accueil</a></li>
+                <li><a href="#">A propos de nous</a></li>
+                <li><a href="#">Aide</a></li>
+               <li><a href="#">Contact</a></li>
+              </ul>
             </div>
-            <ul class="footer-social">
+            <div class="col" id="col-lg-3">
+                <div class="logo2"><a href="homepage.html"><img src="{% static 'img/logo31.png'%}" class="logof"></a></div>
+                <div class="bottom">
+                  <div class="footer-title">
+                    <h4>Suivez nous</h4>
+                  </div>
+                  <ul class="footer-social">
               <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook f1"></i></a></li>
               <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram f1"></i></a></li>
               <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square f1"></i></a></li>
-            </ul>
+                  </ul>
+                </div>
+            </div>
+            <div class="col" id="col-lg-4">
+              <div class="footer-title">
+                <h4>Informations</h4>
+              </div>
+              <ul>
+                <li><a href="#">Livraison</a></li>
+                <li><a href="#">Paiement</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+              </ul>
+            </div>
           </div>
-      </div>
-      <div class="col" id="col-lg-4">
-        <div class="footer-title">
-          <h4>Informations</h4>
         </div>
-        <ul>
-          <li><a href="#">Livraison</a></li>
-          <li><a href="#">Paiement</a></li>
-          <li><a href="#">Conditions d'utilisation</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<script type="text/javascript" src=" {% static 'js/javascript2.js' %}" type="text/javascript">
-</script>
-</body>
+      </section>    
+    </body>
 </html>

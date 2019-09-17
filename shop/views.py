@@ -13,6 +13,9 @@ def homepage(request):
 def about_us(request):
     return render(request,'about_us.html',locals())
 
+def contact_us(request):
+    return render(request,'contact_us.html',locals())
+
 
 def product_page(request):
     return render(request,'ProductDetails.html',locals())
